@@ -7,20 +7,20 @@ body {
 
 header {
   text-align: center;
-  padding: 20px; /* reduced size */
+  padding: 20px;
   background: linear-gradient(135deg, #0078d7, #00a2ff);
   color: white;
 }
 
 header h1 {
-  font-size: 1.8em; /* reduced */
+  font-size: 1.8em;
   margin-bottom: 8px;
 }
 
 header .subtitle {
-  font-size: 1.2em; /* reduced */
+  font-size: 1.2em;
   font-weight: bold;
-  color: #ffeb3b; /* bright yellow for contrast */
+  color: #ffeb3b;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
   margin-bottom: 10px;
 }
@@ -31,4 +31,7 @@ header p {
 }
 
 .resume-buttons {
-  margin-top
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
