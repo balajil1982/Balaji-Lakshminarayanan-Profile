@@ -27,41 +27,4 @@ header {
 .btn {
   background: white;
   color: #0078d7;
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: #005fa3;
-  color: white;
-}
-
-nav {
-  background: #0078d7;
-  padding: 10px;
-  text-align: center;
-}
-
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-section {
-  padding: 30px;
-  max-width: 900px;
-  margin: auto;
-}
-
-h2 {
-  color: #0078d7;
+  padding:
