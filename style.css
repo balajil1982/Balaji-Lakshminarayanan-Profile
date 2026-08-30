@@ -519,3 +519,124 @@ padding: 20px 15px;
 }
 
 }
+
+/* =========================================
+   BALAJI AI ASSISTANT
+========================================= */
+
+#ai-assistant {
+  margin: 50px auto;
+  max-width: 1000px;
+}
+
+#ai-assistant h2 {
+  margin-bottom: 10px;
+}
+
+#ai-assistant > p {
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+
+.ai-chat {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 18px;
+  background: #f7f9fc;
+  border: 1px solid #dfe5ec;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+#ai-question {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 100px;
+  padding: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  font-size: 16px;
+  font-family: inherit;
+  resize: vertical;
+  margin-bottom: 15px;
+}
+
+#ai-question:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+#ask-ai-btn {
+  border: none;
+  cursor: pointer;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#ask-ai-btn:hover {
+  transform: translateY(-1px);
+}
+
+#ask-ai-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.ai-loading {
+  display: none;
+  margin-top: 18px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.ai-answer {
+  margin-top: 22px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  border-left: 4px solid #2563eb;
+  line-height: 1.7;
+  min-height: 40px;
+}
+
+.ai-answer strong {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.ai-answer p {
+  margin: 0;
+}
+
+.ai-sources {
+  margin-top: 12px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+  #ai-assistant {
+    margin: 35px 15px;
+  }
+
+  .ai-chat {
+    padding: 20px;
+  }
+
+  #ai-question {
+    font-size: 15px;
+  }
+
+  #ask-ai-btn {
+    width: 100%;
+  }
+
+}
