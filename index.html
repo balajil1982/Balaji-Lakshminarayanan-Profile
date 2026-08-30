@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 ```
-<title>Balaji Lakshminarayanan | Director | Data & AI</title>
-
 <meta name="description"
-      content="Balaji Lakshminarayanan - Director, Data & AI, Enterprise Data Engineering and Azure Databricks.">
+    content="Balaji Lakshminarayanan - Director, Data & AI, Enterprise Data Engineering and Azure Databricks">
+
+<title>Balaji Lakshminarayanan | Director | Data & AI</title>
 
 <link rel="stylesheet" href="style.css">
 ```
@@ -19,30 +19,43 @@
 
 <body>
 
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
 <header class="hero">
 
 ```
 <div class="hero-content">
 
-    <div class="ai-badge">🚀 DATA • AI • CLOUD • LEADERSHIP</div>
+    <div class="profile-badge">
+        🤖 Balaji AI
+    </div>
 
     <h1>Balaji Lakshminarayanan</h1>
 
     <h2>
-        Director | Data & AI | Enterprise Data Engineering | Azure Databricks
+        Director | Data & AI |
+        Enterprise Data Engineering |
+        Azure Databricks
     </h2>
 
     <p class="hero-description">
-        Driving Digital Transformation through Cloud, AI, Data Engineering
-        and Technology Leadership.
+        🚀 Driving Digital Transformation through Cloud, AI,
+        Data Engineering and Technology Leadership
     </p>
 
-    <div class="resume-buttons">
+    <div class="hero-buttons">
 
         <a href="Balaji_L_Resume_20PlusYearsExp.docx"
            download
-           class="btn resume-btn">
+           class="btn primary-btn">
             📄 Download Resume
+        </a>
+
+        <a href="#ai-assistant"
+           class="btn ai-btn">
+            🤖 Ask Balaji AI
         </a>
 
     </div>
@@ -52,128 +65,149 @@
 
 </header>
 
-<nav>
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<nav class="navbar">
 
 ```
-<a href="#ai-assistant">🤖 Ask Balaji AI</a>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#certifications">Certifications</a>
-<a href="#education">Education</a>
-<a href="#honors">Honors</a>
-<a href="#contact">Contact</a>
+<div class="nav-container">
+
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#education">Education</a>
+    <a href="#honors">Honors & Awards</a>
+    <a href="#ai-assistant">🤖 Ask Balaji AI</a>
+    <a href="#contact">Contact</a>
+
+</div>
 ```
 
 </nav>
 
 <!-- =====================================================
-     BALAJI AI ASSISTANT
+     AI ASSISTANT - MAIN FEATURE
 ===================================================== -->
 
-<section id="ai-assistant" class="ai-section">
+<section id="ai-assistant" class="section ai-section">
 
 ```
-<div class="ai-container">
+<div class="section-header">
 
-    <div class="ai-header">
+    <div class="ai-title-icon">
+        🤖
+    </div>
 
-        <div class="ai-icon">🤖</div>
+    <h2>Ask Balaji AI</h2>
 
-        <div>
-            <span class="ai-label">AI-POWERED PROFESSIONAL ASSISTANT</span>
+    <p>
+        Ask questions about my professional experience,
+        Azure Databricks, Data Engineering, Generative AI,
+        leadership, projects, certifications and more.
+    </p>
 
-            <h2>Ask Balaji AI</h2>
+</div>
 
-            <p>
-                Ask questions about my professional experience, Azure Databricks,
-                Data Engineering, Generative AI, leadership, projects,
-                certifications and industry experience.
-            </p>
-        </div>
+
+<div class="ai-chat-card">
+
+    <div class="ai-status">
+        <span class="status-dot"></span>
+        Balaji AI is ready
+    </div>
+
+
+    <label for="ai-question">
+        💬 Ask me a question about Balaji's professional profile
+    </label>
+
+    <textarea
+        id="ai-question"
+        placeholder="Ask me a question about Balaji's professional profile..."
+        rows="4"></textarea>
+
+
+    <button
+        type="button"
+        id="ask-ai-btn"
+        class="btn ask-button">
+
+        🤖 Ask Balaji AI
+
+    </button>
+
+
+    <div id="ai-loading" class="ai-loading">
+
+        <span class="loading-spinner"></span>
+
+        Balaji AI is thinking...
 
     </div>
 
 
-    <div class="ai-chat">
+    <div id="ai-answer" class="ai-answer">
 
-        <textarea
-            id="ai-question"
-            placeholder="Ask Balaji AI a question..."
-            rows="3"></textarea>
-
-        <button id="ask-ai-btn" class="ai-button">
-            🤖 Ask Balaji AI
-        </button>
-
-
-        <div id="ai-loading" class="ai-loading">
-
-            <span class="loading-dot"></span>
-            Balaji AI is thinking...
-
+        <div class="answer-title">
+            🤖 Balaji AI
         </div>
 
-
-        <div id="ai-answer" class="ai-answer">
-
-            <div class="answer-title">
-                🤖 Balaji AI
-            </div>
-
-            <p>
-                Ask me a question about Balaji's professional profile.
-            </p>
-
-        </div>
-
-
-        <div id="ai-sources" class="ai-sources"></div>
+        <p>
+            Ask me a question about Balaji's professional profile.
+        </p>
 
     </div>
 
 
-    <!-- QUICK QUESTIONS -->
+    <div id="ai-sources" class="ai-sources"></div>
 
-    <div class="quick-questions">
+
+    <!-- =================================================
+         SUGGESTED QUESTIONS
+    ================================================== -->
+
+    <div class="suggestions">
 
         <h3>💡 Try asking</h3>
 
-        <div class="question-grid">
+        <div class="ai-suggestions">
 
-            <button class="question-btn">
+            <button type="button" class="ai-question">
                 What is Balaji's professional background?
             </button>
 
-            <button class="question-btn">
+            <button type="button" class="ai-question">
                 What is Balaji's Azure Databricks expertise?
             </button>
 
-            <button class="question-btn">
+            <button type="button" class="ai-question">
                 Tell me about the 7-Eleven Customer 360 project.
             </button>
 
-            <button class="question-btn">
+            <button type="button" class="ai-question">
                 What certifications does Balaji have?
             </button>
 
-            <button class="question-btn">
+            <button type="button" class="ai-question">
                 What are Balaji's academic qualifications?
             </button>
 
-            <button class="question-btn">
+            <button type="button" class="ai-question">
                 What leadership experience does Balaji have?
             </button>
 
-            <button class="question-btn">
+            <button type="button" class="ai-question">
                 What awards has Balaji received?
             </button>
 
-            <button class="question-btn">
+            <button type="button" class="ai-question">
                 What is Balaji's experience with Generative AI?
             </button>
 
-            <button class="question-btn">
+            <button type="button" class="ai-question">
                 What industries has Balaji worked in?
             </button>
 
@@ -190,34 +224,36 @@
      ABOUT
 ===================================================== -->
 
-<section id="about" class="content-section">
+<section id="about" class="section">
 
 ```
 <h2>👤 About Me</h2>
 
 <p>
-    Hello! I'm <strong>Balaji Lakshminarayanan</strong>, a technology leader
-    with <strong>20+ years of experience</strong> delivering enterprise
-    solutions across Retail, Banking, Financial Services, Healthcare,
-    Airlines and Media industries.
+    Hello! I'm <strong>Balaji Lakshminarayanan</strong>,
+    a technology leader with <strong>20+ years of experience</strong>
+    delivering enterprise solutions across Retail, Banking,
+    Financial Services, Healthcare, Airlines and Media industries.
 </p>
 
 <p>
-    Currently serving as a <strong>Director</strong>, I specialize in
-    Enterprise Data Engineering, Azure Databricks, PySpark, Power BI,
-    Artificial Intelligence, Cloud Analytics and Digital Transformation.
+    Currently serving as a <strong>Director</strong>, I specialize
+    in Enterprise Data Engineering, Azure Databricks, PySpark,
+    Power BI, Artificial Intelligence, Cloud Analytics and
+    Digital Transformation.
 </p>
 
 <p>
-    My passion lies in building scalable cloud data platforms, mentoring
-    engineering teams, leading enterprise programs, driving Agile delivery,
-    and helping organizations transform business challenges into
-    intelligent, data-driven solutions.
+    My passion lies in building scalable cloud data platforms,
+    mentoring engineering teams, leading enterprise programs,
+    driving Agile delivery and helping organizations transform
+    business challenges into intelligent, data-driven solutions.
 </p>
 
 <p>
     I actively contribute to academia through curriculum reviews,
-    guest lectures, Board of Studies participation and technology mentoring.
+    guest lectures, Board of Studies participation and
+    technology mentoring.
 </p>
 ```
 
@@ -227,7 +263,7 @@
      SKILLS
 ===================================================== -->
 
-<section id="skills" class="content-section">
+<section id="skills" class="section">
 
 ```
 <h2>🛠️ Technical Expertise</h2>
@@ -235,65 +271,68 @@
 <div class="skills-grid">
 
     <div class="skill-card">
-        <h3>⚡ Data Engineering</h3>
+        <h3>Data Engineering</h3>
         <p>
-            Enterprise Data Engineering, ETL / ELT, Data Ingestion,
-            Data Transformation, Data Quality, Data Modelling and Migration.
+            Enterprise Data Engineering, ETL / ELT,
+            Data Ingestion, Data Transformation,
+            Data Quality, Data Modelling and Data Migration
         </p>
     </div>
 
     <div class="skill-card">
-        <h3>☁️ Azure Databricks</h3>
+        <h3>Azure Databricks</h3>
         <p>
-            Azure Databricks, Apache Spark, PySpark, Spark SQL,
-            Databricks SQL, Delta Lake, Lakehouse Architecture and Unity Catalog.
+            Azure Databricks, Apache Spark, PySpark,
+            Spark SQL, Databricks SQL, Delta Lake,
+            Lakehouse Architecture and Unity Catalog
         </p>
     </div>
 
     <div class="skill-card">
-        <h3>🔷 Microsoft Azure</h3>
+        <h3>Microsoft Azure</h3>
         <p>
-            Azure Data Factory, Azure DevOps, Cloud Data Platforms
-            and CI/CD.
+            Azure Data Factory, Azure DevOps,
+            Cloud Data Platforms and CI/CD
         </p>
     </div>
 
     <div class="skill-card">
-        <h3>📊 Business Intelligence</h3>
+        <h3>Business Intelligence</h3>
         <p>
-            Power BI, DAX, Data Modelling and Analytics.
+            Power BI, DAX, Data Modelling and Analytics
         </p>
     </div>
 
     <div class="skill-card">
-        <h3>🐍 Programming</h3>
+        <h3>Programming</h3>
         <p>
-            Python, PySpark, SQL, Spark SQL and Core Java.
+            Python, PySpark, SQL, Spark SQL and Core Java
         </p>
     </div>
 
     <div class="skill-card">
-        <h3>🤖 Artificial Intelligence</h3>
+        <h3>Artificial Intelligence</h3>
         <p>
-            Generative AI, LLM Applications, AI Agents,
-            RAG and AI + Data Engineering.
+            Generative AI, LLM Applications,
+            AI Agents, RAG and AI + Data Engineering
         </p>
     </div>
 
     <div class="skill-card">
-        <h3>🧪 Testing & Tools</h3>
+        <h3>Testing & Tools</h3>
         <p>
-            JMeter, Selenium, Postman API, GitHub,
-            Azure DevOps and SVN.
+            JMeter, Selenium, Postman API,
+            GitHub, Azure DevOps and SVN
         </p>
     </div>
 
     <div class="skill-card">
-        <h3>👥 Leadership</h3>
+        <h3>Leadership</h3>
         <p>
-            Technology Strategy, Program Governance, Resource Planning,
-            Agile Delivery, Team Mentoring, Stakeholder Management
-            and Architecture Leadership.
+            Technology Strategy, Program Governance,
+            Resource Planning, Agile Delivery,
+            Team Mentoring, Stakeholder Management
+            and Architecture Leadership
         </p>
     </div>
 
@@ -306,7 +345,7 @@
      PROJECTS
 ===================================================== -->
 
-<section id="projects" class="content-section">
+<section id="projects" class="section">
 
 ```
 <h2>📂 Enterprise Project Portfolio</h2>
@@ -315,19 +354,23 @@
 
     <div class="timeline-item">
 
-        <div class="timeline-icon">💼</div>
+        <div class="timeline-icon">
+            💼
+        </div>
 
         <div class="timeline-content">
 
-            <h3>7-Eleven US – Customer 360 Platform</h3>
+            <h3>
+                7-Eleven US – Customer 360 Platform
+            </h3>
 
             <span class="timeline-date">
                 2019 – Present
             </span>
 
             <p>
-                Led enterprise-scale Data Engineering initiatives using
-                Azure Databricks, PySpark and Power BI.
+                Led enterprise-scale Data Engineering initiatives
+                using Azure Databricks, PySpark and Power BI.
             </p>
 
         </div>
@@ -337,19 +380,24 @@
 
     <div class="timeline-item">
 
-        <div class="timeline-icon">🤖</div>
+        <div class="timeline-icon">
+            🤖
+        </div>
 
         <div class="timeline-content">
 
-            <h3>Oracle Chatbot Platform</h3>
+            <h3>
+                Oracle Chatbot Platform
+            </h3>
 
             <span class="timeline-date">
                 2018 – 2019
             </span>
 
             <p>
-                Integrated Oracle Chatbot with Slack, Alexa and Twilio.
-                Managed API validation and performance testing.
+                Integrated Oracle Chatbot with Slack, Alexa
+                and Twilio. Managed API validation and
+                performance testing.
             </p>
 
         </div>
@@ -365,36 +413,36 @@
      CERTIFICATIONS
 ===================================================== -->
 
-<section id="certifications" class="content-section">
+<section id="certifications" class="section">
 
 ```
 <h2>📜 Certifications</h2>
 
-<div class="certification-grid">
+<ul class="professional-list">
 
-    <div>🏅 Databricks Accredited Generative AI Fundamentals</div>
+    <li>Databricks Accredited Generative AI Fundamentals</li>
 
-    <div>🏅 Databricks Lakehouse Fundamentals</div>
+    <li>Databricks Accreditation Lakehouse Fundamentals</li>
 
-    <div>🏅 Databricks Certified Associate Developer for Apache Spark 3.0</div>
+    <li>Databricks Certified Associate Developer for Apache Spark 3.0</li>
 
-    <div>🏅 Project Management Professional (PMP)</div>
+    <li>Project Management Professional (PMP)</li>
 
-    <div>🏅 EXIN Agile Scrum Master – ASM</div>
+    <li>EXIN Agile Scrum Master – ASM</li>
 
-    <div>🏅 Microsoft Certified Azure Data Fundamentals (DP-900)</div>
+    <li>Microsoft Certified Azure Data Fundamentals (DP-900)</li>
 
-    <div>🏅 Microsoft Certified Azure Developer Associate</div>
+    <li>Microsoft Certified Azure Developer Associate</li>
 
-    <div>🏅 ISTQB Foundation and Intermediate</div>
+    <li>ISTQB Foundation and Intermediate certifications</li>
 
-    <div>🏅 UiPath RPA Developer and Orchestrator</div>
+    <li>UI Path RPA Developer and Orchestrator certificates</li>
 
-    <div>🏅 Generative AI Overview for Project Managers</div>
+    <li>Generative AI Overview for Project Managers</li>
 
-    <div>🏅 Data Trust Accreditation Program – LTIMindtree</div>
+    <li>Data Trust Accreditation Program – LTIMindtree Shoshin School</li>
 
-</div>
+</ul>
 ```
 
 </section>
@@ -403,29 +451,42 @@
      EDUCATION
 ===================================================== -->
 
-<section id="education" class="content-section">
+<section id="education" class="section">
 
 ```
 <h2>🎓 Education</h2>
 
-<div class="education-card">
+<div class="education-grid">
 
-    <h3>MTech WILP – Software Engineering</h3>
-    <p>BITS Pilani — July 2023</p>
+    <div class="education-card">
 
-</div>
+        <h3>MTech WILP – Software Engineering</h3>
 
-<div class="education-card">
+        <p>BITS Pilani</p>
 
-    <h3>MBA</h3>
-    <p>RAI Technology University, Bangalore — May 2008</p>
+        <span>July 2023</span>
 
-</div>
+    </div>
 
-<div class="education-card">
+    <div class="education-card">
 
-    <h3>B.E. Electrical & Electronics Engineering</h3>
-    <p>SCSVMV University, Kancheepuram — May 2004</p>
+        <h3>MBA</h3>
+
+        <p>RAI Technology University, Bangalore</p>
+
+        <span>May 2008</span>
+
+    </div>
+
+    <div class="education-card">
+
+        <h3>B.E. Electrical & Electronics Engineering</h3>
+
+        <p>SCSVMV University, Kancheepuram</p>
+
+        <span>May 2004</span>
+
+    </div>
 
 </div>
 ```
@@ -433,10 +494,10 @@
 </section>
 
 <!-- =====================================================
-     HONORS
+     HONORS & AWARDS
 ===================================================== -->
 
-<section id="honors" class="content-section">
+<section id="honors" class="section">
 
 ```
 <h2>🏆 Honors & Awards</h2>
@@ -445,61 +506,79 @@
 
     <div class="timeline-item">
 
-        <div class="timeline-icon">🎤</div>
-
-        <div class="timeline-content">
-
-            <h3>Chief Guest & Keynote Speaker – Tecmate 2K25</h3>
-
-            <span class="timeline-date">2025</span>
-
-            <p>
-                Invited as Chief Guest and Keynote Speaker for
-                Tecmate 2K25 - 2.0. Delivered sessions on AI,
-                Data Science, Emerging Technologies and career opportunities.
-            </p>
-
+        <div class="timeline-icon">
+            🎤
         </div>
-
-    </div>
-
-
-    <div class="timeline-item">
-
-        <div class="timeline-icon">🎤</div>
-
-        <div class="timeline-content">
-
-            <h3>Chief Guest & Keynote Speaker – YUKTI’26 INFYNEX</h3>
-
-            <span class="timeline-date">2026</span>
-
-            <p>
-                Honored to serve as Chief Guest at YUKTI’26 INFYNEX –
-                National Conference on Data Science & AI.
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <div class="timeline-item">
-
-        <div class="timeline-icon">🎓</div>
 
         <div class="timeline-content">
 
             <h3>
-                Board of Studies – Dr. M.G.R. Educational and Research Institute
+                Chief Guest & Keynote Speaker – Tecmate 2K25
             </h3>
 
-            <span class="timeline-date">June 2026</span>
+            <span class="timeline-date">
+                2025
+            </span>
+
+            <p>
+                Invited as Chief Guest and Keynote Speaker
+                for Tecmate 2K25 - 2.0. Delivered sessions
+                on AI, Data Science, Emerging Technologies
+                and career opportunities.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="timeline-item">
+
+        <div class="timeline-icon">
+            🎤
+        </div>
+
+        <div class="timeline-content">
+
+            <h3>
+                Chief Guest & Keynote Speaker – YUKTI’26 INFYNEX
+            </h3>
+
+            <span class="timeline-date">
+                2026
+            </span>
+
+            <p>
+                Honored to serve as Chief Guest at YUKTI’26
+                INFYNEX – National Conference on Data Science & AI.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="timeline-item">
+
+        <div class="timeline-icon">
+            🎓
+        </div>
+
+        <div class="timeline-content">
+
+            <h3>
+                Board of Studies – Dr. M.G.R. Educational
+                and Research Institute
+            </h3>
+
+            <span class="timeline-date">
+                June 2026
+            </span>
 
             <p>
                 Invited as External Member of the Board of Studies
-                for the Department of Data Science. Contributed to
-                curriculum review for AI & Data Science programs.
+                for the Department of Data Science. Contributed
+                to curriculum review for AI & Data Science programs.
             </p>
 
         </div>
@@ -515,7 +594,7 @@
      CONTACT
 ===================================================== -->
 
-<section id="contact" class="content-section contact-section">
+<section id="contact" class="section contact-section">
 
 ```
 <h2>📧 Contact</h2>
@@ -534,22 +613,30 @@
 
 <p>
     <strong>LinkedIn:</strong>
-    <a href="https://www.linkedin.com/in/balaji-l-14526b1b/"
-       target="_blank">
+    <a
+        href="https://www.linkedin.com/in/balaji-l-14526b1b/"
+        target="_blank"
+        rel="noopener">
         linkedin.com/in/balaji-l-14526b1b
     </a>
 </p>
 
 <p>
     <strong>GitHub AI Project:</strong>
-    <a href="https://github.com/balajil1982/Balaji-AI-Agent"
-       target="_blank">
-        Balaji-AI-Agent
+    <a
+        href="https://github.com/balajil1982/Balaji-AI-Agent"
+        target="_blank"
+        rel="noopener">
+        github.com/balajil1982/Balaji-AI-Agent
     </a>
 </p>
 ```
 
 </section>
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
 
 <footer>
 
@@ -561,7 +648,9 @@
 </p>
 
 <p>
-    Director | Data & AI | Enterprise Data Engineering | Azure Databricks
+    Director | Data & AI |
+    Enterprise Data Engineering |
+    Azure Databricks
 </p>
 
 <p class="powered">
@@ -570,6 +659,10 @@
 ```
 
 </footer>
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
 
 <script src="script.js"></script>
 
