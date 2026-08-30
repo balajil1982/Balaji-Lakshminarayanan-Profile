@@ -1,37 +1,521 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f4f6f9;
-  color: #333;
+/* =========================================================
+BALAJI LAKSHMINARAYANAN
+Professional Profile Website
+========================================================= */
+
+/* ================= GLOBAL ================= */
+
+* {
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
 }
 
+body {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.7;
+background: #f7f9fc;
+color: #1f2937;
+}
+
+a {
+color: #2563eb;
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+strong {
+color: #111827;
+}
+
+/* ================= HEADER ================= */
+
 header {
-  text-align: center;
-  padding: 20px;
-  background: linear-gradient(135deg, #0078d7, #00a2ff);
-  color: white;
+text-align: center;
+padding: 65px 20px;
+background: linear-gradient(135deg, #111827, #1e3a8a);
+color: white;
 }
 
 header h1 {
-  font-size: 1.8em;
-  margin-bottom: 8px;
+margin: 0;
+font-size: 2.8rem;
+letter-spacing: 0.5px;
 }
 
 header .subtitle {
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #ffeb3b;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
-  margin-bottom: 10px;
+margin: 12px 0;
+font-size: 1.25rem;
+font-weight: 500;
 }
 
 header p {
-  font-size: 1em;
-  margin-top: 5px;
+margin: 18px auto;
+max-width: 850px;
+font-size: 1.05rem;
 }
 
+/* ================= RESUME BUTTONS ================= */
+
 .resume-buttons {
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+margin-top: 25px;
+}
+
+.btn {
+display: inline-block;
+margin: 6px;
+padding: 12px 22px;
+border: none;
+border-radius: 8px;
+background: white;
+color: #111827;
+font-size: 0.95rem;
+font-weight: 600;
+cursor: pointer;
+text-decoration: none;
+}
+
+.btn:hover {
+text-decoration: none;
+transform: translateY(-2px);
+}
+
+/* ================= FILE INPUT ================= */
+
+.file-input {
+display: none;
+}
+
+/* ================= NAVIGATION ================= */
+
+nav {
+position: sticky;
+top: 0;
+z-index: 1000;
+
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+
+padding: 12px 10px;
+
+background: white;
+border-bottom: 1px solid #e5e7eb;
+
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+nav a {
+margin: 5px 10px;
+padding: 6px 8px;
+
+color: #374151;
+font-weight: 600;
+font-size: 0.92rem;
+}
+
+nav a:hover {
+color: #2563eb;
+text-decoration: none;
+}
+
+/* ================= SECTIONS ================= */
+
+section {
+max-width: 1050px;
+margin: 35px auto;
+padding: 35px;
+
+background: white;
+border-radius: 14px;
+
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+margin-top: 0;
+margin-bottom: 20px;
+
+color: #111827;
+font-size: 1.8rem;
+
+border-bottom: 2px solid #e5e7eb;
+padding-bottom: 10px;
+}
+
+/* ================= ABOUT ================= */
+
+#about p {
+font-size: 1rem;
+margin-bottom: 16px;
+}
+
+/* ================= SKILLS ================= */
+
+#skills ul,
+#certifications ul,
+#education ul {
+padding-left: 22px;
+}
+
+#skills li,
+#certifications li,
+#education li {
+margin-bottom: 10px;
+}
+
+#skills li::marker {
+color: #2563eb;
+}
+
+/* ================= BALAJI AI ================= */
+
+.ai-assistant {
+max-width: 1050px;
+margin: 45px auto;
+
+padding: 40px;
+
+border-radius: 18px;
+
+background: linear-gradient(
+135deg,
+#eef2ff,
+#f8fafc
+);
+
+border: 1px solid #dbe4f0;
+
+box-shadow:
+0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.ai-content {
+display: flex;
+align-items: center;
+gap: 30px;
+}
+
+.ai-icon {
+min-width: 80px;
+
+font-size: 64px;
+
+text-align: center;
+}
+
+.ai-text {
+flex: 1;
+}
+
+.ai-text h2 {
+margin: 0 0 12px;
+
+border-bottom: none;
+
+color: #111827;
+
+font-size: 2rem;
+}
+
+.ai-intro {
+font-size: 1.1rem;
+font-weight: 600;
+
+color: #374151;
+}
+
+.ai-text p {
+color: #4b5563;
+}
+
+/* ================= AI BUTTON ================= */
+
+.ai-button {
+display: inline-block;
+
+margin-top: 18px;
+
+padding: 14px 28px;
+
+border-radius: 10px;
+
+background: #111827;
+color: white;
+
+font-weight: 700;
+font-size: 1rem;
+
+text-decoration: none;
+
+box-shadow:
+0 5px 15px rgba(0, 0, 0, 0.15);
+
+transition:
+transform 0.2s ease,
+box-shadow 0.2s ease,
+opacity 0.2s ease;
+}
+
+.ai-button:hover {
+text-decoration: none;
+
+transform: translateY(-3px);
+
+opacity: 0.92;
+
+box-shadow:
+0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ================= PROJECT TIMELINE ================= */
+
+.timeline {
+position: relative;
+
+margin: 25px 0;
+padding-left: 25px;
+}
+
+.timeline-item {
+display: flex;
+
+gap: 20px;
+
+margin-bottom: 30px;
+
+position: relative;
+}
+
+.timeline-icon {
+min-width: 48px;
+height: 48px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+border-radius: 50%;
+
+background: #eef2ff;
+
+font-size: 1.3rem;
+}
+
+.timeline-content {
+flex: 1;
+}
+
+.timeline-content h3 {
+margin: 0 0 5px;
+
+color: #111827;
+}
+
+.timeline-date {
+display: inline-block;
+
+margin-bottom: 8px;
+
+color: #6b7280;
+
+font-size: 0.9rem;
+font-weight: 600;
+}
+
+.timeline-content p {
+margin-top: 5px;
+}
+
+/* ================= CONTACT ================= */
+
+#contact p {
+margin: 12px 0;
+}
+
+#contact a {
+font-weight: 500;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+margin-top: 50px;
+
+padding: 35px 20px;
+
+text-align: center;
+
+background: #111827;
+
+color: #d1d5db;
+}
+
+footer hr {
+border: 0;
+
+border-top: 1px solid #374151;
+
+margin-bottom: 25px;
+}
+
+footer p {
+margin: 7px 0;
+}
+
+footer p:last-child {
+color: #93c5fd;
+font-weight: 600;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+header {
+padding: 45px 18px;
+}
+
+header h1 {
+font-size: 2.1rem;
+}
+
+header .subtitle {
+font-size: 1rem;
+}
+
+header p {
+font-size: 0.95rem;
+}
+
+nav {
+position: relative;
+
+```
+justify-content: flex-start;
+```
+
+}
+
+nav a {
+font-size: 0.85rem;
+margin: 3px 6px;
+}
+
+section {
+margin: 20px 12px;
+padding: 25px 20px;
+}
+
+section h2 {
+font-size: 1.5rem;
+}
+
+/* AI MOBILE */
+
+.ai-assistant {
+margin: 25px 12px;
+padding: 28px 20px;
+}
+
+.ai-content {
+flex-direction: column;
+
+```
+align-items: flex-start;
+
+gap: 15px;
+```
+
+}
+
+.ai-icon {
+font-size: 50px;
+
+```
+text-align: left;
+```
+
+}
+
+.ai-text h2 {
+font-size: 1.6rem;
+}
+
+.ai-intro {
+font-size: 1rem;
+}
+
+.ai-button {
+width: 100%;
+
+```
+text-align: center;
+
+padding: 14px 20px;
+```
+
+}
+
+/* TIMELINE MOBILE */
+
+.timeline {
+padding-left: 0;
+}
+
+.timeline-item {
+gap: 12px;
+}
+
+.timeline-icon {
+min-width: 40px;
+height: 40px;
+
+```
+font-size: 1rem;
+```
+
+}
+
+/* RESUME */
+
+.resume-buttons .btn {
+display: block;
+
+```
+width: 100%;
+
+margin: 8px 0;
+```
+
+}
+
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 400px) {
+
+header h1 {
+font-size: 1.8rem;
+}
+
+header .subtitle {
+font-size: 0.9rem;
+}
+
+nav a {
+font-size: 0.8rem;
+}
+
+section {
+padding: 20px 15px;
+}
+
+}
