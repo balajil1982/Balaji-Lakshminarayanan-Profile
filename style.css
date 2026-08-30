@@ -688,3 +688,38 @@ nav {
 ```
 
 }
+
+/* ==========================================
+   AI SUGGESTED QUESTIONS
+========================================== */
+
+.ai-suggestions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.ai-question {
+    padding: 14px 18px;
+    border: 1px solid #dbeafe;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #eff6ff, #f5f3ff);
+    color: #1e3a8a;
+    font-size: 15px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-family: inherit;
+}
+
+.ai-question:hover {
+    transform: translateY(-2px);
+    border-color: #6366f1;
+    box-shadow: 0 6px 18px rgba(79, 70, 229, 0.15);
+    background: linear-gradient(135deg, #dbeafe, #ede9fe);
+}
+
+.ai-question:active {
+    transform: translateY(0);
+}

@@ -205,3 +205,21 @@ function(button) {
 ```
 
 );
+
+// ==========================================
+// AI SUGGESTED QUESTIONS
+// ==========================================
+
+document.querySelectorAll(".ai-question").forEach(button => {
+
+    button.addEventListener("click", function () {
+
+        // Put selected question into textarea
+        questionInput.value = this.textContent.trim();
+
+        // Automatically ask Balaji AI
+        askBalajiAI();
+
+    });
+
+});
